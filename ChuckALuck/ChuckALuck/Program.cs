@@ -4,6 +4,11 @@ namespace ChuckALuck
 {
     class Program
     {
+			static void Feature2()
+			{
+				Console.WriteLine("Feature2");
+			}
+
 			static void Main()
 			{
 				Random rnd = new Random();
@@ -21,6 +26,8 @@ namespace ChuckALuck
 				}
 
 				Console.WriteLine("Das Spiel wurde in Runde {0} mit {1} Euro Kapital beendet", --runde, kapital);
+				Feature2();
+
 
 				Console.ReadKey(true);
 			}
